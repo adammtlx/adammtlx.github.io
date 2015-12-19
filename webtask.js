@@ -6,5 +6,5 @@ return function (context, callback) {
     fs.readdir(".", function(err, files) {
     	fileNames = files;
     });
-    return callback(null, {result : fileNames});
+    return callback(null, {result : "testing"});
 }
