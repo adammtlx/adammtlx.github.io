@@ -1,4 +1,4 @@
-var fs = require("fs");
+// var fs = require("fs");
 
 return function (context, callback) {
     console.log('testing webtask');
