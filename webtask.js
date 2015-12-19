@@ -1,4 +1,10 @@
+var fs = require("fs");
+
 return function (context, callback) {
     console.log('testing webtask');
-    return callback(null, {result : "success"});
+    var fileNames;
+    fs.readdir(".", function(err, files) {
+    	fileNames = files;
+    });
+    return callback(null, {result : fileNames});
 }
