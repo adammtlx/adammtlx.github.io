@@ -1,5 +1,4 @@
-module.exports = function(context, callback) {
-  // context.webhook contains the webhook payload provided by GitHub
-  // context.data contains URL query and webtask token parameters
-  callback(null, { some: 'result' });
+return function (context, callback) {
+    console.log('testing webtask');
+    return callback(null, {result : "success"});
 }
