@@ -7,5 +7,5 @@ return function (context, callback) {
     	fileNames = files;
     	// return callback(null, {result : files});
     });
-    return callback(null, {result : "testing"});
+    return callback(null, {result : fileNames});
 }
