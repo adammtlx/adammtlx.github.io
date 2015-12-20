@@ -1,4 +1,5 @@
+var fs = require("fs");
 
 return function (context, callback) {
-    return callback(null, {result : "hello1235"});
+    return callback(null, {result : "hello1236"});
 }
