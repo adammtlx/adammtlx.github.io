@@ -1,5 +1,7 @@
 var fs = require("fs");
 
 return function (context, callback) {
-    return callback(null, {result : "hello1236"});
+	fs.readdir(".", function(err, files) {
+    });
+    return callback(null, {result : "hello1237"});
 }
