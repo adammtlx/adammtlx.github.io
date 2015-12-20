@@ -1,9 +1,8 @@
-var fs = require("fs");
+// request = require('request');
 
 return function (context, callback) {
-	var fileNames;
-	fs.readdir(".", function(err, files) {
-		fileNames = files;
-    });
-    return callback(null, {res : fileNames});
+	console.dir("test");
+	console.debug("test1");
+	console.log("test");
+    return callback(null, {result : context.webhook.repository.full_name});
 }
